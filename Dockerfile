@@ -7,6 +7,7 @@ RUN apt-get install \
 ca-certificates \
 curl \
 jq \
+openssh-client \
 python3 \
 python3-pip \
 python3-setuptools \

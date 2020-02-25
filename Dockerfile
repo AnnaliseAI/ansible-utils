@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM ubuntu:bionic
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -15,7 +15,7 @@ python3-wheel \
 wget \
   --no-install-recommends -y
 
-RUN pip3 install ansible
+RUN pip3 install ansible boto3 awscli
 
 WORKDIR /app
 
